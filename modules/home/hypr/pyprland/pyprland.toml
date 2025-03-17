@@ -1,0 +1,28 @@
+[pyprland]
+plugins = ["scratchpads", "toggle_dpms", "expose",]
+
+
+[scratchpads.yazi]
+animation = "fromTop"
+command = "kitty -e yazi"
+class = "kitty"
+size = "40% 50%"
+monitor = {HDMI-A-1={size="55% 60%"}}
+lazy = true
+
+[scratchpads.nautilus]
+animation = "fromTop"
+command = "nautilus"
+class = "org.gnome.Nautilus"
+size = "50% 60%"
+monitor = {eDP-1={size="60% 65%"}}
+lazy = true
+
+[scratchpads.kitty]
+animation = "fromBottom"
+command = "kitty"
+class = "kitty"
+size = "20% 60%"
+monitor = {HDMI-A-1={size="40% 50%"}}
+lazy = true
+
