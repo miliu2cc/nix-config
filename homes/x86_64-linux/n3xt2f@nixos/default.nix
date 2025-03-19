@@ -21,7 +21,7 @@ with lib;
   cli.fish.enable = true;
   cli.neovim.enable = true;
   env.enable = true;
-    hypr = {
+  hypr = {
     hyprland = {
       enable = true;
       hostname = hostname;
@@ -33,6 +33,7 @@ with lib;
     pyprland.enable = true;
     wlogout.enable = true;
   };
+  niri.enable = true;
   waybar.enable = true;
   scripts = {
     dmenucmd = "tofi";

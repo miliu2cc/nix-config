@@ -18,7 +18,6 @@ in
     home.packages = with pkgs;[
       wechat-uos
       qq
-      discord
     ];
   };
 }

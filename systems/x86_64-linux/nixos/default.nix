@@ -9,18 +9,16 @@
   format, # A normalized name for the system target (eg. `iso`).
   virtual, # A boolean to determine whether this system is a virtual target using nixos-generators.
   systems, # An attribute map of your defined hosts.
-
   # All other arguments come from the system system.
   config,
   hostname,
   ...
-}:
-{
-  imports = [ ./hardware-configuration.nix ];
+}: {
+  imports = [./hardware-configuration.nix];
 
   services.gvfs.enable = true;
   services.power-profiles-daemon.enable = true;
-  
+
   displayManager = {
     gdm.enable = true;
   };
@@ -28,8 +26,8 @@
   desktop = {
     gnome.enable = true;
     hyprland.enable = true;
+    #niri.enable = true;
   };
-
 
   hardware = {
     audio.enable = true;
@@ -58,7 +56,7 @@
     nix.enable = true;
   };
 
-  environment.shells = with pkgs; [ fish ];
+  environment.shells = with pkgs; [fish];
   programs.fish.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -72,8 +70,6 @@
     ];
     createHome = true;
     shell = pkgs.fish;
-    packages = with pkgs; [ kitty ];
+    packages = with pkgs; [kitty];
   };
-
-
 }

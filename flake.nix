@@ -29,15 +29,12 @@
       url = "github:hyprwm/hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
-    Hyprspace = {
-      url = "github:KZDKM/Hyprspace";
-      inputs.hyprland.follows = "hyprland";
-    };
-    hycov = {
-      url = "github:DreamMaoMao/hycov";
-      inputs.hyprland.follows = "hyprland";
-    };
     pyprland.url = "github:hyprland-community/pyprland";
+
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
   };
 
@@ -66,9 +63,14 @@
         stateVersion = "24.11";
       };
 
+      overlays = with inputs; [
+        niri.overlays.niri
+      ];
+
       # Home modules:
       home.modules = with inputs; [
         stylix.homeManagerModules.stylix
+        niri.homeModules.niri
       ];
 
       systems = {
@@ -76,6 +78,7 @@
           nixos = with inputs; [
             daeuniverse.nixosModules.dae
             daeuniverse.nixosModules.daed
+            niri.nixosModules.niri
           ];
         };
       };
