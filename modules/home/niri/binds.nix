@@ -30,8 +30,6 @@ in
             "drun"
             "-n"
           ];
-          "Mod+X".action =
-            sh "${getExe pkgs.cliphist} list | ${getExe config.programs.rofi.package} -dmenu | ${getExe pkgs.cliphist} decode | ${wl-copy}";
 
           "Mod+F".action = toggle-window-floating;
           "Mod+Space".action = toggle-column-tabbed-display;
@@ -55,8 +53,8 @@ in
           "Mod+Ctrl+J".action = move-window-down-or-to-workspace-down;
           "Mod+Ctrl+K".action = move-window-up-or-to-workspace-up;
 
-          "Mod+[".action = focus-column-first;
-          "Mod+]".action = focus-column-last;
+          "Mod+U".action = focus-column-first;
+          "Mod+I".action = focus-column-last;
           "Mod+Ctrl+Home".action = move-column-to-first;
           "Mod+Ctrl+End".action = move-column-to-last;
 
@@ -88,7 +86,7 @@ in
           "Mod+0".action.focus-workspace = 10;
 
           "Mod+Shift+H".action.set-column-width = "-5%";
-          "Mod+Shift+L".action.set-column-width = "+5%";
+          #"Mod+Shift+L".action.set-column-width = "+5%";
 
           "Print".action = sh "flameshot gui";
           "Mod+S".action = screenshot;

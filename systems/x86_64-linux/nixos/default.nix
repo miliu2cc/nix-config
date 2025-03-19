@@ -26,7 +26,7 @@
   desktop = {
     gnome.enable = true;
     hyprland.enable = true;
-    #niri.enable = true;
+    niri.enable = true;
   };
 
   hardware = {

@@ -4,8 +4,8 @@ let
   cfg = config.niri;
 in
 {
-  options.niri = {
-    enable = mkOpt types.bool false "Enable niri wm";
+  options.niri = with types; {
+    enable = mkEnableOption "enable niri  wm";
   };
 
   imports = lib.snowfall.fs.get-non-default-nix-files ./.;
