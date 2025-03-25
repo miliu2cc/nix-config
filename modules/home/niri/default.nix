@@ -30,14 +30,6 @@ in
       };
       
       outputs = {
-        "eDP-1" = {
-          mode = {
-            width = 1920;
-            height = 1080;
-            refresh = 164.998;
-          };
-          variable-refresh-rate = true;
-        };
         "HDMI-A-1" = {
           mode = {
             width = 1920;
@@ -58,6 +50,11 @@ in
           command = [
             "fcitx5"
             "-dr"
+          ];
+        }
+        {
+          command = [
+            "waybar"
           ];
         }
       ];

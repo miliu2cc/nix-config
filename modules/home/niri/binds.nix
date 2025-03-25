@@ -21,8 +21,15 @@ in
           "Mod+Q".action = close-window;
           "Mod+Shift+Q".action = quit;
 
+          "Mod+Escape".action.spawn = "wlogout";
+
           "Mod+Return".action.spawn = "kitty";
-          "Mod+N".action.spawn = "neovide";
+          "Mod+G".action.spawn = "neovide";
+          "Mod+E".action.spawn = [
+            "kitty"
+            "-e"
+            "yazi"
+          ];
           "Mod+W".action.spawn = "zen";
           "Mod+A".action.spawn = [
             "${getExe config.programs.rofi.package}"
@@ -32,36 +39,39 @@ in
           ];
 
           "Mod+F".action = toggle-window-floating;
-          "Mod+Space".action = toggle-column-tabbed-display;
+          "Mod+B".action = fullscreen-window;
+          "Mod+Space".action = toggle-column-tabbed-display; #idk
 
-          "Mod+Left".action = focus-column-left;
-          "Mod+Down".action = focus-window-down;
-          "Mod+Up".action = focus-window-up;
-          "Mod+Right".action = focus-column-right;
           "Mod+H".action = focus-column-left;
           "Mod+L".action = focus-column-right;
 
-          "Mod+Ctrl+left".action = move-column-left;
-          "Mod+Ctrl+Down".action = move-window-down;
-          "Mod+Ctrl+Up".action = move-window-up;
-          "Mod+Ctrl+Right".action = move-column-right;
           "Mod+Ctrl+H".action = move-column-left;
           "Mod+Ctrl+L".action = move-column-right;
 
           "Mod+J".action = focus-window-or-workspace-down;
           "Mod+K".action = focus-window-or-workspace-up;
+          "Mod+Shift+J".action = consume-or-expel-window-left;
+          "Mod+Shift+K".action = consume-or-expel-window-right;
           "Mod+Ctrl+J".action = move-window-down-or-to-workspace-down;
           "Mod+Ctrl+K".action = move-window-up-or-to-workspace-up;
 
           "Mod+U".action = focus-column-first;
           "Mod+I".action = focus-column-last;
-          "Mod+Ctrl+Home".action = move-column-to-first;
-          "Mod+Ctrl+End".action = move-column-to-last;
+          "Mod+Ctrl+U".action = move-column-to-first;
+          "Mod+Ctrl+I".action = move-column-to-last;
 
+          "Mod+N".action = focus-monitor-left;
+          "Mod+M".action = focus-monitor-right;
+          "Mod+Shift+N".action = move-window-to-monitor-left;
+          "Mod+Shift+M".action = move-window-to-monitor-right;
+
+          #TODO
           "Mod+Page_Down".action = focus-workspace-down;
           "Mod+Page_Up".action = focus-workspace-up;
 
           "Mod+C".action = center-column;
+          "Mod+V".action = switch-focus-between-floating-and-tiling;
+          #"Mod+Shift+v".action = focus-tiling;
 
           "Mod+Shift+1".action.move-window-to-workspace = 1;
           "Mod+Shift+2".action.move-window-to-workspace = 2;
@@ -86,7 +96,7 @@ in
           "Mod+0".action.focus-workspace = 10;
 
           "Mod+Shift+H".action.set-column-width = "-5%";
-          #"Mod+Shift+L".action.set-column-width = "+5%";
+          "Mod+Shift+L".action.set-column-width = "+5%";
 
           "Print".action = sh "flameshot gui";
           "Mod+S".action = screenshot;
@@ -97,7 +107,7 @@ in
             write-to-disk = false;
           };
 
-          "Mod+Shift+L".action.spawn = "hyprlock";
+          "Mod+P".action.spawn = "hyprlock";
         };
     };
   };

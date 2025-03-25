@@ -18,8 +18,8 @@ in
   home.file."${config.xdg.configHome}/waybar/style.css" = {
     source = ./css/style.css;
   };
-  home.file."${config.xdg.configHome}/waybar/gruvbox.css" = {
-    source = ./css/gruvbox.css;
+  home.file."${config.xdg.configHome}/waybar/tokyo-night.css" = {
+    source = ./css/tokyo-night.css;
   };
   home.file."${config.xdg.configHome}/waybar/mediaplayer.py" = {
     source = ./mediaplayer.py;
@@ -39,7 +39,7 @@ in
         layer = "top";
 
         modules-left =
-          [ "custom/wmname" "hyprland/workspaces" "hyprland/window" ];
+          [ "custom/wmname" "niri/window" ];
         modules-center = [ ];
         modules-right = [
           "tray"
@@ -54,35 +54,18 @@ in
         ];
 
         # Modules configuration
-        "hyprland/workspaces" = {
+        "niri/workspaces" = {
           active-only = "false";
-          on-scroll-up = "hyprctl dispatch workspace e+1";
-          on-scroll-down = "hyprctl dispatch workspace e-1";
-          disable-scroll = "false";
+          disable-click = "true";
           all-outputs = "true";
           format = "{icon}";
           on-click = "activate";
           format-icons = {
-            "1" = "1";
-            "2" = "2";
-            "3" = "3";
-            "4" = "4";
-            "5" = "5";
-            "6" = "6";
-            "7" = "7";
-            "8" = "8";
-            "9" = "9";
-            "10" = "10";
+            "zen" = "";
+            "wechat" = "";
           };
         };
 
-        "idle_inhibitor" = {
-          format = "{icon}";
-          format-icons = {
-            activated = " ";
-            deactivated = " ";
-          };
-        };
 
         "tray" = { spacing = 8; };
 
@@ -163,11 +146,6 @@ in
           on-click-release = "sleep 0";
         };
 
-        "custom/powermenu" = {
-          format = " ";
-          on-click = "wlogout";
-          on-click-release = "sleep 1";
-        };
       };
     };
   };

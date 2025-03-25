@@ -26,9 +26,13 @@ in
       # apps:
       obsidian
       hmcl
+      onlyoffice-desktopeditors
+
+      cargo
 
 
       # cli:
+      starship
       fzf
       fd
       jq
