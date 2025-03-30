@@ -14,5 +14,9 @@ in {
 
   config = mkIf cfg.enable {
     programs.river.enable = true;
+
+    environment.systemPackages = [
+      pkgs.river_luatile
+    ];
   };
 }
