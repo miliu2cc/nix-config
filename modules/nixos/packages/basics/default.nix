@@ -27,6 +27,7 @@ in
       obsidian
       hmcl
       onlyoffice-desktopeditors
+      lua5_4_compat
 
       cargo
 
