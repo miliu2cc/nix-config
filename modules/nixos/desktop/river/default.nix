@@ -13,8 +13,6 @@ in {
   };
 
   config = mkIf cfg.enable {
-    environment.systemPackages = [
-      pkgs.river
-    ];
+    programs.river.enable = true;
   };
 }

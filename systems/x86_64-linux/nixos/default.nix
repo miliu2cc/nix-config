@@ -27,6 +27,7 @@
     gnome.enable = true;
     hyprland.enable = true;
     niri.enable = true;
+    river.enable = true;
   };
 
   hardware = {
