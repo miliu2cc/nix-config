@@ -16,7 +16,7 @@ in {
     programs.river.enable = true;
 
     environment.systemPackages = [
-      pkgs.river_luatile
+      pkgs.river-luatile
     ];
   };
 }

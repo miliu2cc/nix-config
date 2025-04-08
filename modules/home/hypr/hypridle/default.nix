@@ -33,7 +33,7 @@ in
           }
 
           {
-            timeout = 300; # 5min
+            timeout = 3000; # 50min
             on-timeout = "loginctl lock-session"; # lock screen when timeout has passed
           }
 
