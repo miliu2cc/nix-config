@@ -23,6 +23,8 @@ in
       nix-index
       nurl
 
+      inputs.nvix.packages.${pkgs.system}.default
+
       # apps:
       obsidian
       hmcl
