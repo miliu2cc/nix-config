@@ -15,10 +15,6 @@ in
     enable = mkOpt types.bool false "Enable alacritty terminal";
   };
   config = mkIf cfg.enable {
-    services.mysql = {
-        enable = true;
-        package = pkgs.mariadb;
-    };
     
     home.packages = with pkgs; [
         beekeeper-studio

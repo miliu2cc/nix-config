@@ -1,3 +1,4 @@
+
 {
   config,
   pkgs,
@@ -7,22 +8,17 @@
 with lib;
 with lib.dotfiles;
 let
-  cfg = config.packages.daed;
+  cfg = config.packages.SQL;
 in
 {
-  options.packages.daed = {
+  options.packages.SQL = {
     enable = mkEnableOption "Enable daed packages";
   };
 
   config = mkIf cfg.enable {
-    services.daed = {
+    services.SQL = {
       enable = true;
-
-      openFirewall = {
-        enable = true;
-        port = 12345;
-      };
-      
+      packages = pkgs.mariadb;
     };
   };
 }
