@@ -12,11 +12,11 @@ let
 in
 {
   options.packages.SQL = {
-    enable = mkEnableOption "Enable daed packages";
+    enable = mkEnableOption "Enable SQl packages";
   };
 
   config = mkIf cfg.enable {
-    services.SQL = {
+    services.mysql = {
       enable = true;
       packages = pkgs.mariadb;
     };
