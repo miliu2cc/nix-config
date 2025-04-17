@@ -15,12 +15,5 @@ in
   };
   config = mkIf cfg.enable {
     
-    programs.nix-ld.enable = true;
-
-    programs.neovim.nvimdots = {
-      enable = true;
-      setBuildEnv = true;  # Only needed for NixOS
-      withBuildTools = true; # Only needed for NixOS
-    };
   };
 }
