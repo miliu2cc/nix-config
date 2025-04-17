@@ -43,7 +43,6 @@
     dev.enable = true;
     gtk.enable = true;
     daed.enable = true;
-    nvimdots.enable = true;
     sql.enable = true;
     zen-browser.enable = true;
   };
