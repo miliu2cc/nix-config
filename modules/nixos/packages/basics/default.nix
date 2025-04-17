@@ -22,6 +22,7 @@ in
       nvd
       nix-index
       nurl
+      nix-ld
 
       inputs.nvix.packages.${pkgs.system}.default
 
