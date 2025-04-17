@@ -8,10 +8,10 @@
 with lib;
 with lib.dotfiles;
 let
-  cfg = config.packages.SQL;
+  cfg = config.packages.sql;
 in
 {
-  options.packages.SQL = {
+  options.packages.sql = {
     enable = mkEnableOption "Enable SQl packages";
   };
 

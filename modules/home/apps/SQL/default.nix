@@ -8,10 +8,10 @@
 with lib;
 with lib.dotfiles;
 let
-  cfg = config.apps.SQL;
+  cfg = config.apps.sql;
 in
 {
-  options.apps.SQL = {
+  options.apps.sql = {
     enable = mkOpt types.bool false "Enable alacritty terminal";
   };
   config = mkIf cfg.enable {
