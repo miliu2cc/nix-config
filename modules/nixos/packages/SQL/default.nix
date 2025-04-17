@@ -18,7 +18,7 @@ in
   config = mkIf cfg.enable {
     services.mysql = {
       enable = true;
-      packages = pkgs.mariadb;
+      package = pkgs.mariadb;
     };
   };
 }
