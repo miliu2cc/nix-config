@@ -72,6 +72,7 @@
       home.modules = with inputs; [
         stylix.homeManagerModules.stylix
         niri.homeModules.niri
+        nvimdots.homeModules.nvimdots
       ];
 
       systems = {
