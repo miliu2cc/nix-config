@@ -24,7 +24,6 @@ in
       nurl
       nix-ld
 
-      lunarvim
 
       inputs.nvix.packages.${pkgs.system}.default
 

@@ -17,8 +17,7 @@
     };
     daeuniverse.url = "github:daeuniverse/flake.nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    nvimdots.url = "github:ayamir/nvimdots";
-
+    khanelivim.url = "github:khaneliman/khanelivim";
 
     stylix = {
       url = "github:danth/stylix";

@@ -21,6 +21,7 @@ with lib;
   cli.yazi.enable = true;
   cli.fish.enable = true;
   cli.neovim.enable = true;
+  cli.nvim.enable = true;
   env.enable = true;
   hypr = {
     hyprland = {

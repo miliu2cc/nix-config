@@ -26,7 +26,7 @@ in
         "flakes"
       ];
       substituters = [
-        #"https://cache.nixos.org"
+        "https://cache.nixos.org"
         "https://hyprland.cachix.org"
         "https://mirrors.cernet.edu.cn/nix-channels/store"
       ];
