@@ -19,14 +19,8 @@ in
   config = mkIf cfg.enable {
     programs.neovim = {
       enable = true;
-      #nvimdots = {
-      #  enable = true;
-      #  setBuildEnv = true;
-      #  withBuildTools = true;
-      #};
     };
     
-    programs.nix-ld.enable = true;
 
 
   };
