@@ -10,7 +10,7 @@ with lib.dotfiles;
 let
   cfg = config.tools.stylix;
   hostname = cfg.hostname;
-  wallp = ../../../../wallp/shaonv.jpg;
+  wallp = ../../../../wallp/shou.jpg;
   cursorSize = if hostname == "nixos" then 16 else 12;
   termFontSize = 15;
   appFontSize = 12;

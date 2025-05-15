@@ -17,10 +17,10 @@ in
   };
 
   config = mkIf cfg.enable {
-    
-      packages = with nixpkgs; [
-        khanelivim.packages.${system}.default
-      ];
+  
+    programs.neovim = {
+      enable = true;
+    };
 
 
   };

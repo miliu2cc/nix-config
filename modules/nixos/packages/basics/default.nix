@@ -16,7 +16,7 @@ in
   };
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
-
+      #nix
       nh
       nix-output-monitor
       nvd
@@ -24,7 +24,7 @@ in
       nurl
       nix-ld
 
-
+      #temp
       inputs.nvix.packages.${pkgs.system}.default
 
       # apps:
@@ -32,8 +32,15 @@ in
       hmcl
       onlyoffice-desktopeditors
       lua5_4_compat
-
+      
+      #rust
       cargo
+
+      #download
+      qbittorrent
+
+      #player
+      vlc
 
 
       # cli:

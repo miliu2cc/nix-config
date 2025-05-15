@@ -20,7 +20,7 @@ in
       extraConfig = ''
         background {
           monitor = HDMI-A-1
-          path = ${../../../../wallp/shaonv.jpg}
+          path = ${../../../../wallp/shou.jpg}
           blur_passes = 2
           contrast = 1
           brightness = 0.5
