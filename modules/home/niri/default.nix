@@ -34,8 +34,11 @@ in
           mode = {
             width = 1920;
             height = 1080;
-            refresh = 100.000;
+            refresh = 120.000;
           };
+        };
+        "eDP-1" = {
+          enable = false;
         };
       };
 

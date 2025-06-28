@@ -33,6 +33,7 @@ in
       onlyoffice-desktopeditors
       lua5_4_compat
       
+      #lang
       #rust
       cargo
 
