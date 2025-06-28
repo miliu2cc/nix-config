@@ -8,10 +8,10 @@
 with lib;
 with lib.dotfiles;
 let
-  cfg = config.apps.coolercontrol;
+  cfg = config.coolercontrol;
 in
 {
-  options.apps.coolercontrol = {
+  options.coolercontrol = {
     enable = mkOpt types.bool false "Enable coolercontrl";
   };
   config = mkIf cfg.enable {

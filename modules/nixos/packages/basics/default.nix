@@ -23,6 +23,7 @@ in
       nix-index
       nurl
       nix-ld
+      coolercontrol
 
       #temp
       inputs.nvix.packages.${pkgs.system}.default
