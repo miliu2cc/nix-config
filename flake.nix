@@ -18,6 +18,7 @@
     daeuniverse.url = "github:daeuniverse/flake.nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     khanelivim.url = "github:khaneliman/khanelivim";
+    awcc.url = "github:miliu2cc/AWCC";
 
     stylix = {
       url = "github:danth/stylix";
@@ -72,6 +73,7 @@
         stylix.homeManagerModules.stylix
         niri.homeModules.niri
         nvimdots.homeModules.nvimdots
+        awcc.homeManagerModules.awcc
       ];
 
       systems = {

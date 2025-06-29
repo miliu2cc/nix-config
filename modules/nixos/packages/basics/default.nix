@@ -23,8 +23,10 @@ in
       nix-index
       nurl
       nix-ld
-      coolercontrol
-
+      coolercontrol.coolercontrol-gui
+      coolercontrol.coolercontrold
+      coolercontrol.coolercontrol-liqctld
+      dell-command-configure
       #temp
       inputs.nvix.packages.${pkgs.system}.default
 

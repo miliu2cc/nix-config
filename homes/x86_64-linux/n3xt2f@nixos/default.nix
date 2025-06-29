@@ -18,7 +18,6 @@ with lib;
   apps.kitty.enable = true;
   apps.socialMidia.enable = true;
   apps.sql.enable = true;
-  coolercontrol.enable = true;
   cli.yazi.enable = true;
   cli.fish.enable = true;
   cli.neovim.enable = true;

@@ -32,6 +32,7 @@
 
   hardware = {
     audio.enable = true;
+    awcc.enable = true;
     bluetooth.enable = true;
     gpu.nvidia.enable = true;
     networking.enable = true;
@@ -69,6 +70,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "plugdev"
     ];
     createHome = true;
     shell = pkgs.fish;
