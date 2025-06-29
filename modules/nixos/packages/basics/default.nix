@@ -27,8 +27,8 @@ in
       inputs.nvix.packages.${pkgs.system}.default
 
       # apps:
-      obsidian
-      lua5_4_compat
+      #     obsidian
+      #lua5_4_compat
       
       #lang
       #rust
@@ -37,7 +37,7 @@ in
       #download
 
       #player
-      vlc
+      #vlc
 
 
       # cli:
