@@ -27,21 +27,24 @@ in
       #driSupport = true;
       #driSupport32Bit = true;
     };
-    services.xserver.videoDrivers = ["nvidia" "modesetting"];
+    services.xserver.videoDrivers = ["nvidia"];
     hardware.nvidia = {
         package = config.boot.kernelPackages.nvidiaPackages.stable;
         prime = {
       #sync.enable = true;
             offload.enable = true;
-      #offload.enableOffloadCmd = true;
+            offload.enableOffloadCmd = true;
             intelBusId = "PCI:0:2:0";
             nvidiaBusId = "PCI:1:0:0";
         };
         modesetting.enable = true;
         powerManagement.enable = false;
         powerManagement.finegrained = false;
-        open = true;
+        open = false;
         nvidiaSettings = false;
+        forceFullCompositionPipeline = true;
     };
+    boot.kernelParams = ["modprobe.blacklist=nouveau"];
+
   };
 }
