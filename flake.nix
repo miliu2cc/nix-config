@@ -66,6 +66,7 @@
 
       overlays = with inputs; [
         niri.overlays.niri
+        awcc.overlays.awcc
       ];
 
       # Home modules:
@@ -73,7 +74,6 @@
         stylix.homeManagerModules.stylix
         niri.homeModules.niri
         nvimdots.homeModules.nvimdots
-        awcc.homeManagerModules.awcc
       ];
 
       systems = {

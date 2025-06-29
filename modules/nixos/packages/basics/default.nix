@@ -29,6 +29,7 @@ in
       dell-command-configure
       #temp
       inputs.nvix.packages.${pkgs.system}.default
+      awcc
 
       # apps:
       obsidian
