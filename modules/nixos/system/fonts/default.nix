@@ -34,17 +34,16 @@ in
         emoji = ["Noto Color Emoji"];
 
         serif = [
-          "Maple Mono NF CN"
           "Noto Serif CJK SC"
           "Noto Serif"
         ];
         sansSerif = [
-          "Maple Mono NF CN"
+          
           "Noto Sans CJK SC"
           "Moto Sans"
         ];
         monospace = [
-          "Maple Mono NF CN"
+          
           "Noto Sans Mono CJK SC"
         ];
         };
@@ -60,7 +59,7 @@ in
         noto-fonts-cjk-sans
         noto-fonts-cjk-serif
         noto-fonts-color-emoji
-        maple-mono-NF
+        
       ]
       ++ nerdFonts;
     };

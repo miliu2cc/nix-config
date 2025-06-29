@@ -23,18 +23,11 @@ in
       nix-index
       nurl
       nix-ld
-      coolercontrol.coolercontrol-gui
-      coolercontrol.coolercontrold
-      coolercontrol.coolercontrol-liqctld
-      dell-command-configure
       #temp
       inputs.nvix.packages.${pkgs.system}.default
-      awcc
 
       # apps:
       obsidian
-      hmcl
-      onlyoffice-desktopeditors
       lua5_4_compat
       
       #lang
@@ -42,7 +35,6 @@ in
       cargo
 
       #download
-      qbittorrent
 
       #player
       vlc

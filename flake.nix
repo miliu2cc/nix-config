@@ -1,10 +1,8 @@
 {
-  description = "Why?";
+  description = "A new nix config";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-    # nixpkgs-stable.url = "github:nixos/nixpkgs?ref=nixos-24.11"; # Pin stable for nerdfonts
-    # nixpkgs-limefix.url = "github:nixos/nixpkgs?rev=efabdd83aaa48154cb63515771c435f36adb7d24";
 
     snowfall-lib = {
       url = "github:snowfallorg/lib";
@@ -17,8 +15,8 @@
     };
     daeuniverse.url = "github:daeuniverse/flake.nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    khanelivim.url = "github:khaneliman/khanelivim";
-    awcc.url = "github:miliu2cc/AWCC";
+    #khanelivim.url = "github:khaneliman/khanelivim";
+    #   awcc.url = "github:miliu2cc/AWCC";
 
     stylix = {
       url = "github:danth/stylix";
@@ -61,19 +59,19 @@
       # Host-specific settings:
       systems.hosts.nixos.specialArgs = {
         hostname = "nixos";
-        stateVersion = "24.11";
+        stateVersion = "25.05";
       };
 
       overlays = with inputs; [
         niri.overlays.niri
-        awcc.overlays.awcc
       ];
 
       # Home modules:
       home.modules = with inputs; [
-        stylix.homeManagerModules.stylix
+        stylix.homeModules.stylix
         niri.homeModules.niri
         nvimdots.homeModules.nvimdots
+        awcc.homeManagerModules.awcc
       ];
 
       systems = {
@@ -90,7 +88,7 @@
       homes.users."n3xt2f@nixos".specialArgs = {
         hostname = "nixos";
         username = "n3xt2f";
-        stateVersion = "24.11";
+        stateVersion = "25.05";
       };
     };
 }

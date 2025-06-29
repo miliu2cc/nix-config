@@ -19,7 +19,7 @@ in
     # To fix GTK apps:
     programs.dconf.enable = true;
 
-    services.xserver = {
+    services = {
       desktopManager.gnome.enable = true;
     };
   };
