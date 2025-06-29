@@ -27,10 +27,6 @@ in
       criterion
       gdbgui
 
-      # Web:
-      nodePackages_latest.nodejs
-      nodePackages_latest.typescript
-      bun
 
       # IDEs & editors:
       # neovim
@@ -41,17 +37,11 @@ in
       renderdoc
 
       # Languages
-      python312Packages.python
       uv
       lua
 
       # Tools
-      wget
       curl
-      xh
-      atac
-      yq
-      jqp
       # atuin
 
       # Posix utils:
