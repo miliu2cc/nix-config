@@ -16,8 +16,9 @@ in
 
   config = mkIf cfg.enable {
     services = {
+        xserver.enable = true;
         displayManager.gdm.enable = true;
-        displayManager.gdm.wayland = false;
+        displayManager.gdm.wayland = true;
     };
   };
 }
