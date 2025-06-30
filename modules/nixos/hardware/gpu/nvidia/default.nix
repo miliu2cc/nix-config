@@ -44,7 +44,7 @@ in
         nvidiaSettings = false;
         forceFullCompositionPipeline = true;
     };
-    boot.kernelParams = ["modprobe.blacklist=nouveau"];
+    boot.kernelParams = ["modprobe.blacklist=nouveau", "nvidia_drm.modeset=1"];
 
   };
 }
