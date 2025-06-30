@@ -13,12 +13,12 @@ in
 {
   # imports = [ inputs.chaotic.nixosModules.default ];
   options.system.kernel = {
-    xanmod.enable = mkOpt types.bool false "Enable xanmod kernel";
+    zen.enable = mkOpt types.bool false "Enable zen kernel";
   };
   config = {
     # chaotic.nyx.overlay.enable = true;
-    boot.kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_latest;
-    boot.extraModulePackages = [config.boot.kernelPackages.acpi_call];
-    boot.kernelParams = ["acpi_call"];
+    boot.kernelPackages = pkgs.linuxKernel.packages.linux_zen;
+    #boot.extraModulePackages = [config.boot.kernelPackages.acpi_call];
+    #boot.kernelParams = ["acpi_call"];
   };
 }

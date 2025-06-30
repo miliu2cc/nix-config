@@ -52,7 +52,7 @@
     dbus.enable = false;
     fonts.enable = true;
     fcitx5.enable = true;
-    kernel.xanmod.enable = true;
+    kernel.zen.enable = true;
     ld.enable = true;
     locale.enable = true;
     nix.enable = true;
