@@ -21,9 +21,9 @@ in
           "Mod+Q".action = close-window;
           "Mod+Shift+Q".action = quit;
 
-          "Mod+Escape".action.spawn = "wlogout";
+          "Mod+Escape".action.spawn = "wlogout";#关机界面
 
-          "Mod+Return".action.spawn = "kitty";
+          "Mod+Return".action.spawn = "kitty";#换成ghosty
           "Mod+G".action.spawn = "neovide";
           "Mod+E".action.spawn = [
             "kitty"
@@ -32,7 +32,7 @@ in
           ];
           "Mod+W".action.spawn = "zen";
           "Mod+A".action.spawn = [
-            "${getExe config.programs.rofi.package}"
+            "${getExe config.programs.rofi.package}"#启动器
             "-show"
             "drun"
             "-n"
@@ -40,7 +40,7 @@ in
 
           "Mod+F".action = toggle-window-floating;
           "Mod+B".action = fullscreen-window;
-          "Mod+Space".action = toggle-column-tabbed-display; #idk
+          "Mod+Tab".action = toggle-overview;#概览
 
           "Mod+H".action = focus-column-left;
           "Mod+L".action = focus-column-right;
@@ -60,14 +60,7 @@ in
           "Mod+Ctrl+U".action = move-column-to-first;
           "Mod+Ctrl+I".action = move-column-to-last;
 
-          "Mod+N".action = focus-monitor-left;
-          "Mod+M".action = focus-monitor-right;
-          "Mod+Shift+N".action = move-window-to-monitor-left;
-          "Mod+Shift+M".action = move-window-to-monitor-right;
 
-          #TODO
-          "Mod+Page_Down".action = focus-workspace-down;
-          "Mod+Page_Up".action = focus-workspace-up;
 
           "Mod+C".action = center-column;
           "Mod+V".action = switch-focus-between-floating-and-tiling;
@@ -100,14 +93,6 @@ in
 
           "Print".action = sh "flameshot gui";
           "Mod+S".action = screenshot;
-          "Ctrl+Print".action.screenshot-screen = {
-            write-to-disk = false;
-          };
-          "Alt+Print".action.screenshot-window = {
-            write-to-disk = false;
-          };
-
-          "Mod+P".action.spawn = "hyprlock";
         };
     };
   };

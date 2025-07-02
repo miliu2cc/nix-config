@@ -70,6 +70,7 @@ in
           { proportion = 1.0 / 1.0; }
         ];
 
+
         gaps = 10;
 
         focus-ring = {

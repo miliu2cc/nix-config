@@ -15,7 +15,6 @@
     };
     daeuniverse.url = "github:daeuniverse/flake.nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    #khanelivim.url = "github:khaneliman/khanelivim";
     #   awcc.url = "github:miliu2cc/AWCC";
 
     stylix = {
@@ -23,13 +22,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hyprland.url = "github:hyprwm/Hyprland";
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
-    pyprland.url = "github:hyprland-community/pyprland";
 
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";

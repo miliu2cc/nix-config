@@ -23,19 +23,8 @@ with lib;
   cli.neovim.enable = true;
   cli.nvim.enable = true;
   env.enable = true;
-  hypr = {
-    hyprland = {
-      enable = true;
-      hostname = hostname;
-      barcmd = "waybar &";
-      #menucmd = "tofi-drun";
-    };
-    hyprlock.enable = true;
-    hypridle.enable = true;
-    pyprland.enable = true;
-    wlogout.enable = true;
-  };
   niri.enable = true;
+  quickshell.enable = true;
   waybar.enable = true;
   scripts = {
     dmenucmd = "tofi";
