@@ -24,7 +24,6 @@ with lib;
   cli.nvim.enable = true;
   env.enable = true;
   niri.enable = true;
-  quickshell.enable = true;
   waybar.enable = true;
   scripts = {
     dmenucmd = "tofi";

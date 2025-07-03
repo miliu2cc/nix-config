@@ -9,6 +9,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -22,6 +24,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    lix-module = {
+      url = "https://git.lix.systems/lix-project/nixos-module/archive/2.93.2-1.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     quickshell = {
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
@@ -68,7 +74,8 @@
         stylix.homeModules.stylix
         niri.homeModules.niri
         nvimdots.homeModules.nvimdots
-        awcc.homeManagerModules.awcc
+        #awcc.homeManagerModules.awcc
+        #quickshell.homeModules.quickshell
       ];
 
       systems = {
@@ -77,6 +84,7 @@
             daeuniverse.nixosModules.dae
             daeuniverse.nixosModules.daed
             niri.nixosModules.niri
+            lix-module.nixosModules.default
           ];
         };
       };

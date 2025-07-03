@@ -57,7 +57,7 @@ in
         }
         {
           command = [
-            "waybar"
+            "quickshell"
           ];
         }
       ];

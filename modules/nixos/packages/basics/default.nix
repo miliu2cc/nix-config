@@ -23,12 +23,19 @@ in
       nix-index
       nurl
       nix-ld
-      #temp
       inputs.nvix.packages.${pkgs.system}.default
+      inputs.quickshell.packages.${pkgs.system}.default
+      gemini-cli
+
+      #temp
+      code-cursor-fhs
 
       # apps:
       #     obsidian
       #lua5_4_compat
+
+      #something fun
+      cmatrix
       
       #lang
       #rust
