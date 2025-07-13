@@ -57,8 +57,8 @@
     nix.enable = true;
   };
 
-  environment.shells = with pkgs; [fish];
-  programs.fish.enable = true;
+  environment.shells = with pkgs; [nushell];
+  
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.n3xt2f = {
@@ -71,7 +71,7 @@
       "plugdev"
     ];
     createHome = true;
-    shell = pkgs.fish;
+    shell = pkgs.nushell;
     packages = with pkgs; [kitty];
   };
 }

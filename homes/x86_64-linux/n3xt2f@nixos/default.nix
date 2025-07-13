@@ -16,6 +16,7 @@ with lib;
 
 
   apps.kitty.enable = true;
+  apps.ghostty.enable = true;
   apps.socialMidia.enable = true;
   apps.sql.enable = true;
   cli.yazi.enable = true;

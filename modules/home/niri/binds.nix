@@ -37,6 +37,13 @@ in
             "drun"
             "-n"
           ];
+          "Mod+Shift+A".action.spawn = [
+            "quickshell"
+            "ipc"
+            "call"
+            "drawers"
+            "launcher"
+          ]
 
           "Mod+F".action = toggle-window-floating;
           "Mod+B".action = fullscreen-window;

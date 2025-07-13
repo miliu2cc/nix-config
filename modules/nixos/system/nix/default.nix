@@ -27,10 +27,8 @@ in
       ];
       substituters = [
         "https://cache.nixos.org"
-        "https://hyprland.cachix.org"
-        "https://mirrors.cernet.edu.cn/nix-channels/store"
       ];
-      trusted-public-keys = [ "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" ];
+      max-jobs = "auto";
     };
 
     # Optimize storage and automatic scheduled GC running

@@ -44,7 +44,7 @@ in
       #download
 
       #player
-      #vlc
+      vlc
 
 
       # cli:
