@@ -41,7 +41,7 @@
     basics.enable = true;
     dev.enable = true;
     gtk.enable = true;
-    daed.enable = true;
+    #daed.enable = true;
     sql.enable = true;
     zen-browser.enable = true;
   };

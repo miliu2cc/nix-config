@@ -24,11 +24,33 @@ in
       nurl
       nix-ld
       inputs.nvix.packages.${pkgs.system}.default
-      inputs.quickshell.packages.${pkgs.system}.default
+      (inputs.quickshell.packages.${pkgs.system}.default.override {
+                    withJemalloc = true;
+                    withQtSvg = true;
+                    withWayland = true;
+                    withX11 = false;
+                    withPipewire = true;
+                    withPam = true;
+                    withHyprland = true;
+                    withI3 = false;
+                  })
       gemini-cli
 
-      #temp
+      #editor
       code-cursor-fhs
+      zed-editor
+
+      kdePackages.qt5compat
+      libsForQt5.qt5.qtgraphicaleffects
+      kdePackages.qtbase
+      kdePackages.qtdeclarative
+      kdePackages.qt6ct
+      cava
+      material-symbols
+
+      flclash
+
+
 
       # apps:
       #     obsidian
@@ -36,7 +58,7 @@ in
 
       #something fun
       cmatrix
-      
+
       #lang
       #rust
       cargo

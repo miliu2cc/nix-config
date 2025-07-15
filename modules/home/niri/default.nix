@@ -55,11 +55,11 @@ in
             "-dr"
           ];
         }
-        {
+       /* {
           command = [
             "quickshell"
           ];
-        }
+        }*/
       ];
 
       layout = {
